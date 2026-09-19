@@ -240,7 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/infinix/X6833B/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/infinix/X6833B/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/infinix/X6833B/proprietary/vendor/etc/libnfc-slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-slm.conf \
@@ -391,7 +390,6 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
-    libladder \
     libthha \
     libtneclient \
     libvcodec_oal \
@@ -1507,7 +1505,6 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_stack \
     volte_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
 

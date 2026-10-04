@@ -387,8 +387,6 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
-    libion_mtk \
-    libion_ulit \
     libipsec_ims_shr \
     libthha \
     libtneclient \

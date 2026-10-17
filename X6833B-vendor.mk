@@ -6,8 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6833B
 
 PRODUCT_COPY_FILES += \
+    vendor/infinix/X6833B/proprietary/system/etc/default-permissions/default-com.transsion.dtsaudio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-com.transsion.dtsaudio.xml \
     vendor/infinix/X6833B/proprietary/system/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
+    vendor/infinix/X6833B/proprietary/system/etc/permissions/dtsaudio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/dtsaudio.xml \
     vendor/infinix/X6833B/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
+    vendor/infinix/X6833B/proprietary/system/etc/sysconfig/config-com.transsion.dtsaudio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/config-com.transsion.dtsaudio.xml \
     vendor/infinix/X6833B/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6833B/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/infinix/X6833B/proprietary/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/030c0000000000000000000000000000.drbin \
@@ -161,6 +164,30 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6833B/proprietary/vendor/etc/audio_param/preset_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_ringtone.bin \
     vendor/infinix/X6833B/proprietary/vendor/etc/audio_param/preset_voice.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voice.bin \
     vendor/infinix/X6833B/proprietary/vendor/etc/audio_param/preset_voip.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voip.bin \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/beq44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq44 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/beq48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/ctc:$(TARGET_COPY_OUT_VENDOR)/etc/dts/ctc \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/current_bluetooth44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth44k \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/current_bluetooth48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth48k \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/current_lineout48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_lineout48k \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/current_speaker48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_speaker48k \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/current_usb44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb44k \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/current_usb48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb48k \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/customer.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dts/customer.cfg \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/dts-eagle.lic:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts-eagle.lic \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/dts_audio_settings:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts_audio_settings \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/games_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_accessory44 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/games_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_accessory48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/games_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_speaker48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/movie_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory44 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/movie_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/movie_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_speaker48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/music_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory44 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/music_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/music_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_speaker48 \
+    vendor/infinix/X6833B/proprietary/vendor/etc/dts/off_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/off_speaker48 \
     vendor/infinix/X6833B/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/infinix/X6833B/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/infinix/X6833B/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -198,6 +225,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/infinix/X6833B/proprietary/vendor/etc/init/dts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dts.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/infinix/X6833B/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -378,7 +406,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6833B/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
-    kpoc_charger \
     libshowlogo \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA_510 \
@@ -387,6 +414,8 @@ PRODUCT_PACKAGES += \
     libAVCSecureVencCA_510 \
     libTEECommon \
     libbwc \
+    libdts-eagle-shared \
+    libdtsdsec \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
@@ -398,6 +427,7 @@ PRODUCT_PACKAGES += \
     libverno \
     libwo \
     libmtk_drvb \
+    libdtsaudio \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
@@ -1452,6 +1482,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
+    DtsAudio \
+    dtsaudio \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
@@ -1466,6 +1498,7 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
+    kpoc_charger \
     ccci_mdinit \
     ccci_rpcd \
     fuelgauged \

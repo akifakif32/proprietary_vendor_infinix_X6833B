@@ -385,6 +385,80 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdts-eagle-shared",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdts-eagle-shared.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdts-eagle-shared.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdtsdsec",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdtsdsec.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdtsdsec.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libgz_gp_client",
     owner: "infinix",
     strip: {
@@ -807,6 +881,56 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdtsaudio",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libdtsaudio.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libaudioutils",
+                "liblog",
+                "libdts-eagle-shared",
+                "libsqlite",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libdtsaudio.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libaudioutils",
+                "liblog",
+                "libdts-eagle-shared",
+                "libsqlite",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
 }
@@ -31235,6 +31359,26 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+}
+
+android_app_import {
+    name: "DtsAudio",
+    owner: "infinix",
+    apk: "proprietary/product/app/DtsAudio/DtsAudio.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+dex_import {
+    name: "dtsaudio",
+    owner: "infinix",
+    jars: [
+        "proprietary/system/framework/dtsaudio.jar",
+    ],
 }
 
 prebuilt_etc_xml {
